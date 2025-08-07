@@ -143,9 +143,9 @@ export const useAuthStore = defineStore('auth', {
     /**
      * Request password reset
      */
-    async requestPasswordReset(email) {
+    async requestPasswordReset(payload) {
       try {
-        const response = await axios.post('/auth/request_password_reset', { email })
+        const response = await axios.post('/auth/forgot_password', payload)
 
         if (response.data?.success) {
           Notify.create({
