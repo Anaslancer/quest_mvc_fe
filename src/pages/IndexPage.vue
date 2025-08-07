@@ -1,6 +1,6 @@
 <template>
   <q-page class="todoapp">
-    <h4>Hi, {{ authStore.user?.first_name }} {{ authStore.user?.last_name }}</h4>
+    <h4 class="user-name">Hi, {{ authStore.user?.first_name }} {{ authStore.user?.last_name }}</h4>
 
     <!-- Header -->
     <TodoHeader @add-todo="addTodo" />
