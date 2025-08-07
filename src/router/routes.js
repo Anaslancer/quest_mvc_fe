@@ -8,6 +8,21 @@ const routes = [
         component: () => import('pages/IndexPage.vue'),
         meta: { requiresAuth: true },
       },
+      {
+        path: "all",
+        component: () => import('pages/IndexPage.vue'),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: "active",
+        component: () => import('pages/IndexPage.vue'),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: "completed",
+        component: () => import('pages/IndexPage.vue'),
+        meta: { requiresAuth: true },
+      },
     ],
   },
 

@@ -33,6 +33,7 @@
 
     <!-- Footer -->
     <TodoFooter :todos="todos" @delete-completed="deleteCompleted" @tab-change="currentTab = $event" />
+  </q-page>
 </template>
 
 <script setup>
